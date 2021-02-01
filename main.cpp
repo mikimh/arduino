@@ -173,7 +173,10 @@ void loop(){
         lastTimestamp = rtc.now().unixtime();
       }*/
 
-      
+      /*
+            if( (hour > end_hour && hour < start_hour && start_hour > end_hour && light) || 
+          (hour > end_hour && start_hour < end_hour && light) )  
+        */
       DateTime now = rtc.now();
     
       if((now.hour() < start_hour && light) || 
